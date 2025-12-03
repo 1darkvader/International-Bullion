@@ -1144,7 +1144,7 @@ const TermsOfServicePage = () => (
         <section className="bg-charcoal border border-gold/20 p-8">
           <h2 className="font-display text-2xl text-gold mb-4">1. Acceptance of Terms</h2>
           <p className="text-gray-300 leading-relaxed">
-            By accessing or using the services of Rock International Bullion ("Company," "we," "our"), 
+            {"By accessing or using the services of Rock International Bullion (\"Company,\" \"we,\" \"our\"),"} 
             you agree to be bound by these Terms of Service. If you do not agree to these terms, 
             please do not use our services. These terms constitute a legally binding agreement between 
             you and Rock International Bullion.
