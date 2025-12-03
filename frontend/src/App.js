@@ -644,7 +644,7 @@ const ContactPage = () => {
           className="text-center mb-16"
         >
           <h1 className="font-display text-4xl md:text-5xl text-white mb-4">Contact Us</h1>
-          <p className="text-gray-400 max-w-2xl mx-auto">Request a private consultation or inquire about today's gold prices.</p>
+          <p className="text-gray-400 max-w-2xl mx-auto">{"Request a private consultation or inquire about today's gold prices."}</p>
           <div className="w-20 h-1 bg-gold mx-auto mt-4"></div>
         </motion.div>
 
