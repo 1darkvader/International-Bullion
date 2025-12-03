@@ -511,10 +511,12 @@ const AboutPage = () => (
         className="text-center mb-16"
       >
         <h1 className="font-display text-4xl md:text-5xl text-white mb-4">About Us</h1>
-        <div className="w-20 h-1 bg-gold mx-auto"></div>
+        <p className="text-gray-400 max-w-2xl mx-auto">Meet the leadership team behind Rock International Bullion</p>
+        <div className="w-20 h-1 bg-gold mx-auto mt-4"></div>
       </motion.div>
 
-      <div className="grid lg:grid-cols-2 gap-16 items-center">
+      {/* David Rock Section */}
+      <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -569,11 +571,70 @@ const AboutPage = () => (
         </motion.div>
       </div>
 
+      {/* Hannah A. Fry Section */}
+      <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
+        <motion.div
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="order-2 lg:order-1"
+        >
+          <h2 className="font-display text-3xl text-white mb-6">Meet Hannah A. Fry</h2>
+          <div className="space-y-4 text-gray-300 leading-relaxed">
+            <p>
+              Hannah A. Fry brings over a decade of experience in private wealth management and 
+              precious metals advisory to Rock International Bullion. Her expertise spans institutional 
+              investment strategies, portfolio diversification, and discreet asset protection for 
+              ultra-high-net-worth families.
+            </p>
+            <p>
+              With a background in international finance and a deep understanding of global bullion 
+              markets, Hannah specializes in creating bespoke acquisition strategies tailored to each 
+              {"client's"} unique financial objectives and privacy requirements.
+            </p>
+            <p>
+              Her commitment to excellence and discretion has made her an invaluable partner for 
+              clients seeking sophisticated gold investment solutions with the highest level of 
+              confidentiality.
+            </p>
+          </div>
+          <div className="mt-8 grid grid-cols-2 gap-6">
+            <div className="bg-jet border border-gold/20 p-4 text-center">
+              <div className="font-display text-3xl text-gold">10+</div>
+              <div className="text-gray-400 text-sm">Years in Private Wealth</div>
+            </div>
+            <div className="bg-jet border border-gold/20 p-4 text-center">
+              <div className="font-display text-3xl text-gold">$500M+</div>
+              <div className="text-gray-400 text-sm">Assets Advised</div>
+            </div>
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="order-1 lg:order-2"
+        >
+          <div className="bg-charcoal border border-gold/30 p-1">
+            <div className="bg-gradient-to-br from-gold/20 to-transparent aspect-[4/5] flex items-center justify-center">
+              <div className="text-center">
+                <div className="w-32 h-32 mx-auto bg-gold-gradient rounded-full flex items-center justify-center mb-6">
+                  <span className="font-display text-4xl text-jet font-bold">HF</span>
+                </div>
+                <h3 className="font-display text-2xl text-white">Hannah A. Fry</h3>
+                <p className="text-gold">Director of Client Relations</p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="mt-24 bg-charcoal border border-gold/20 p-10"
+        className="bg-charcoal border border-gold/20 p-10"
       >
         <h3 className="font-display text-2xl text-white mb-6 text-center">Our Commitment</h3>
         <div className="grid md:grid-cols-3 gap-8 text-center">
@@ -597,6 +658,165 @@ const AboutPage = () => (
     </div>
   </div>
 );
+
+// Clients Page
+const ClientsPage = () => {
+  const privileges = [
+    {
+      icon: <Lock className="w-10 h-10" />,
+      title: 'Absolute Discretion',
+      desc: 'Every interaction, transaction, and communication is handled with the utmost confidentiality. Your identity and holdings remain completely private.',
+      features: ['Anonymous acquisition options', 'Encrypted communications', 'Non-disclosure agreements', 'Private viewing appointments']
+    },
+    {
+      icon: <Shield className="w-10 h-10" />,
+      title: 'Priority Access',
+      desc: 'As a privileged client, you receive first access to rare and limited gold products before they reach the general market.',
+      features: ['Early access to new inventory', 'Reserved allocation rights', 'Exclusive product offerings', 'Priority order fulfillment']
+    },
+    {
+      icon: <Globe className="w-10 h-10" />,
+      title: 'White-Glove Delivery',
+      desc: 'Our premium logistics network ensures your gold arrives safely, discreetly, and on your schedule—anywhere in the world.',
+      features: ['Personal courier service', 'Armored transport options', 'Custom delivery scheduling', 'Real-time secure tracking']
+    },
+    {
+      icon: <Phone className="w-10 h-10" />,
+      title: 'Dedicated Advisor',
+      desc: 'Your personal relationship manager is available around the clock to address your needs and provide expert guidance.',
+      features: ['24/7 direct phone line', 'Personalized market insights', 'Portfolio review sessions', 'Succession planning support']
+    }
+  ];
+
+  const tiers = [
+    {
+      name: 'Private',
+      minInvestment: '$100,000+',
+      benefits: ['Dedicated account manager', 'Competitive pricing', 'Insured delivery', 'Quarterly market reports']
+    },
+    {
+      name: 'Elite',
+      minInvestment: '$500,000+',
+      benefits: ['Senior advisor assignment', 'Priority pricing', 'White-glove delivery', 'Monthly strategy calls', 'Exclusive event invitations']
+    },
+    {
+      name: 'Institutional',
+      minInvestment: '$2,000,000+',
+      benefits: ['Direct principal access', 'Institutional pricing', 'Custom logistics solutions', 'Dedicated secure storage', 'Family office integration', 'Legacy planning services']
+    }
+  ];
+
+  return (
+    <div data-testid="clients-page" className="pt-24 pb-16 min-h-screen">
+      <div className="max-w-7xl mx-auto px-6">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="text-center mb-16"
+        >
+          <h1 className="font-display text-4xl md:text-5xl text-white mb-4">Private Client Privileges</h1>
+          <p className="text-gray-400 max-w-2xl mx-auto">
+            Experience the pinnacle of discreet gold acquisition services. Our privileged clients 
+            enjoy exclusive benefits designed for those who demand absolute privacy and exceptional service.
+          </p>
+          <div className="w-20 h-1 bg-gold mx-auto mt-4"></div>
+        </motion.div>
+
+        {/* Privileges Grid */}
+        <div className="grid md:grid-cols-2 gap-8 mb-24">
+          {privileges.map((privilege, idx) => (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: idx * 0.1 }}
+              className="bg-charcoal border border-gold/20 p-8 hover:border-gold/50 transition-all"
+            >
+              <div className="text-gold mb-4">{privilege.icon}</div>
+              <h3 className="font-display text-2xl text-white mb-3">{privilege.title}</h3>
+              <p className="text-gray-400 mb-6 leading-relaxed">{privilege.desc}</p>
+              <ul className="space-y-2">
+                {privilege.features.map((feature, fidx) => (
+                  <li key={fidx} className="flex items-center gap-3 text-sm text-gray-300">
+                    <ChevronRight className="w-4 h-4 text-gold flex-shrink-0" />
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Membership Tiers */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mb-24"
+        >
+          <h2 className="font-display text-3xl text-white mb-4 text-center">Client Tiers</h2>
+          <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
+            Our tiered service model ensures that every client receives attention and benefits 
+            commensurate with their investment level.
+          </p>
+          <div className="grid md:grid-cols-3 gap-8">
+            {tiers.map((tier, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.15 }}
+                className={`bg-jet border p-8 ${idx === 1 ? 'border-gold md:scale-105' : 'border-gold/20'}`}
+              >
+                {idx === 1 && (
+                  <div className="bg-gold text-jet text-xs font-bold px-3 py-1 inline-block mb-4">
+                    MOST POPULAR
+                  </div>
+                )}
+                <h3 className="font-display text-2xl text-white mb-2">{tier.name}</h3>
+                <p className="text-gold text-lg font-semibold mb-6">{tier.minInvestment}</p>
+                <ul className="space-y-3">
+                  {tier.benefits.map((benefit, bidx) => (
+                    <li key={bidx} className="flex items-start gap-3 text-sm text-gray-300">
+                      <ChevronRight className="w-4 h-4 text-gold flex-shrink-0 mt-0.5" />
+                      {benefit}
+                    </li>
+                  ))}
+                </ul>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Confidentiality Promise */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="bg-gradient-to-r from-charcoal via-jet to-charcoal border border-gold/30 p-10 text-center"
+        >
+          <Lock className="w-12 h-12 text-gold mx-auto mb-4" />
+          <h3 className="font-display text-2xl text-white mb-4">Our Confidentiality Promise</h3>
+          <p className="text-gray-300 max-w-3xl mx-auto leading-relaxed mb-6">
+            At Rock International Bullion, discretion is not merely a service feature—it is the 
+            foundation of everything we do. We understand that our clients value their privacy above 
+            all else. That is why we have implemented rigorous protocols to ensure that your identity, 
+            transactions, and holdings remain absolutely confidential. No information is ever shared 
+            with third parties without your explicit written consent.
+          </p>
+          <Link
+            to="/contact"
+            className="inline-block bg-gold text-jet px-8 py-4 font-semibold hover:bg-gold-light transition-all"
+          >
+            Apply for Private Membership
+          </Link>
+        </motion.div>
+      </div>
+    </div>
+  );
+};
 
 // Contact Page
 const ContactPage = () => {
