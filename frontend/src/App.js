@@ -1021,6 +1021,390 @@ const ContactPage = () => {
   );
 };
 
+// Privacy Policy Page
+const PrivacyPolicyPage = () => (
+  <div data-testid="privacy-policy-page" className="pt-24 pb-16 min-h-screen">
+    <div className="max-w-4xl mx-auto px-6">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="mb-12"
+      >
+        <h1 className="font-display text-4xl md:text-5xl text-white mb-4">Privacy Policy</h1>
+        <p className="text-gray-400">Last Updated: December 2025</p>
+        <div className="w-20 h-1 bg-gold mt-4"></div>
+      </motion.div>
+
+      <div className="prose prose-invert max-w-none space-y-8">
+        <section className="bg-charcoal border border-gold/20 p-8">
+          <h2 className="font-display text-2xl text-gold mb-4">1. Introduction</h2>
+          <p className="text-gray-300 leading-relaxed">
+            Rock International Bullion ("we," "our," or "us") is committed to protecting the privacy and 
+            confidentiality of our clients. This Privacy Policy explains how we collect, use, disclose, 
+            and safeguard your information when you engage with our services or visit our website. 
+            As a premier private gold dealership, we understand that discretion is paramount to our clients.
+          </p>
+        </section>
+
+        <section className="bg-charcoal border border-gold/20 p-8">
+          <h2 className="font-display text-2xl text-gold mb-4">2. Information We Collect</h2>
+          <div className="text-gray-300 leading-relaxed space-y-4">
+            <p><strong className="text-white">Personal Information:</strong> Name, email address, telephone number, country of residence, and preferred method of contact.</p>
+            <p><strong className="text-white">Transaction Information:</strong> Details of gold purchases, payment information, delivery addresses, and transaction history.</p>
+            <p><strong className="text-white">Identity Verification:</strong> Government-issued identification documents as required by applicable anti-money laundering regulations.</p>
+            <p><strong className="text-white">Communication Records:</strong> Records of correspondence and consultations with our team.</p>
+          </div>
+        </section>
+
+        <section className="bg-charcoal border border-gold/20 p-8">
+          <h2 className="font-display text-2xl text-gold mb-4">3. How We Use Your Information</h2>
+          <ul className="text-gray-300 leading-relaxed space-y-2 list-disc list-inside">
+            <li>To process and fulfill your gold acquisition requests</li>
+            <li>To communicate with you regarding your account and transactions</li>
+            <li>To comply with legal and regulatory requirements</li>
+            <li>To provide personalized investment insights and market updates</li>
+            <li>To improve our services and client experience</li>
+            <li>To prevent fraud and ensure the security of transactions</li>
+          </ul>
+        </section>
+
+        <section className="bg-charcoal border border-gold/20 p-8">
+          <h2 className="font-display text-2xl text-gold mb-4">4. Information Sharing & Disclosure</h2>
+          <p className="text-gray-300 leading-relaxed mb-4">
+            We do not sell, trade, or rent your personal information to third parties. We may share 
+            your information only in the following circumstances:
+          </p>
+          <ul className="text-gray-300 leading-relaxed space-y-2 list-disc list-inside">
+            <li><strong className="text-white">Service Providers:</strong> Trusted partners who assist in delivery, vaulting, and secure logistics</li>
+            <li><strong className="text-white">Legal Compliance:</strong> When required by law, court order, or regulatory authority</li>
+            <li><strong className="text-white">With Your Consent:</strong> When you have provided explicit written authorization</li>
+          </ul>
+        </section>
+
+        <section className="bg-charcoal border border-gold/20 p-8">
+          <h2 className="font-display text-2xl text-gold mb-4">5. Data Security</h2>
+          <p className="text-gray-300 leading-relaxed">
+            We implement industry-leading security measures to protect your personal information, including:
+            encrypted communications, secure data storage, access controls, and regular security audits. 
+            Our systems are designed to meet the highest standards of data protection utilized by 
+            leading financial institutions.
+          </p>
+        </section>
+
+        <section className="bg-charcoal border border-gold/20 p-8">
+          <h2 className="font-display text-2xl text-gold mb-4">6. Data Retention</h2>
+          <p className="text-gray-300 leading-relaxed">
+            We retain your personal information for as long as necessary to fulfill the purposes outlined 
+            in this policy, comply with legal obligations, resolve disputes, and enforce our agreements. 
+            Transaction records are maintained in accordance with applicable financial regulations.
+          </p>
+        </section>
+
+        <section className="bg-charcoal border border-gold/20 p-8">
+          <h2 className="font-display text-2xl text-gold mb-4">7. Your Rights</h2>
+          <p className="text-gray-300 leading-relaxed mb-4">You have the right to:</p>
+          <ul className="text-gray-300 leading-relaxed space-y-2 list-disc list-inside">
+            <li>Access the personal information we hold about you</li>
+            <li>Request correction of inaccurate information</li>
+            <li>Request deletion of your data (subject to legal requirements)</li>
+            <li>Opt-out of marketing communications</li>
+            <li>Lodge a complaint with a supervisory authority</li>
+          </ul>
+        </section>
+
+        <section className="bg-charcoal border border-gold/20 p-8">
+          <h2 className="font-display text-2xl text-gold mb-4">8. Contact Us</h2>
+          <p className="text-gray-300 leading-relaxed">
+            For privacy-related inquiries or to exercise your rights, please contact our Privacy Officer at{' '}
+            <a href="mailto:privacy@rockinternationalbullion.com" className="text-gold hover:underline">
+              privacy@rockinternationalbullion.com
+            </a>
+          </p>
+        </section>
+      </div>
+    </div>
+  </div>
+);
+
+// Terms of Service Page
+const TermsOfServicePage = () => (
+  <div data-testid="terms-of-service-page" className="pt-24 pb-16 min-h-screen">
+    <div className="max-w-4xl mx-auto px-6">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="mb-12"
+      >
+        <h1 className="font-display text-4xl md:text-5xl text-white mb-4">Terms of Service</h1>
+        <p className="text-gray-400">Last Updated: December 2025</p>
+        <div className="w-20 h-1 bg-gold mt-4"></div>
+      </motion.div>
+
+      <div className="prose prose-invert max-w-none space-y-8">
+        <section className="bg-charcoal border border-gold/20 p-8">
+          <h2 className="font-display text-2xl text-gold mb-4">1. Acceptance of Terms</h2>
+          <p className="text-gray-300 leading-relaxed">
+            By accessing or using the services of Rock International Bullion ("Company," "we," "our"), 
+            you agree to be bound by these Terms of Service. If you do not agree to these terms, 
+            please do not use our services. These terms constitute a legally binding agreement between 
+            you and Rock International Bullion.
+          </p>
+        </section>
+
+        <section className="bg-charcoal border border-gold/20 p-8">
+          <h2 className="font-display text-2xl text-gold mb-4">2. Services Description</h2>
+          <p className="text-gray-300 leading-relaxed">
+            Rock International Bullion provides private gold acquisition services, including but not limited to:
+            sourcing LBMA-certified gold bars, secure storage arrangements through partner facilities, 
+            insured international delivery, and investment consultation. All services are provided on a 
+            private, invitation-only basis.
+          </p>
+        </section>
+
+        <section className="bg-charcoal border border-gold/20 p-8">
+          <h2 className="font-display text-2xl text-gold mb-4">3. Eligibility Requirements</h2>
+          <div className="text-gray-300 leading-relaxed space-y-4">
+            <p>To engage our services, you must:</p>
+            <ul className="space-y-2 list-disc list-inside">
+              <li>Be at least 18 years of age or the age of majority in your jurisdiction</li>
+              <li>Have the legal capacity to enter into binding contracts</li>
+              <li>Provide accurate and complete identification documentation</li>
+              <li>Not be subject to any sanctions or restrictions that would prohibit gold transactions</li>
+              <li>Have funds from legitimate, verifiable sources</li>
+            </ul>
+          </div>
+        </section>
+
+        <section className="bg-charcoal border border-gold/20 p-8">
+          <h2 className="font-display text-2xl text-gold mb-4">4. Pricing & Payment</h2>
+          <div className="text-gray-300 leading-relaxed space-y-4">
+            <p><strong className="text-white">Quotations:</strong> All gold prices are quoted based on current market rates plus applicable premiums. Quotations are valid for the time period specified and are subject to change.</p>
+            <p><strong className="text-white">Payment:</strong> Full payment is required before gold is dispatched. We accept wire transfers from verified bank accounts. Payment terms are specified in each individual transaction agreement.</p>
+            <p><strong className="text-white">Taxes & Duties:</strong> Clients are responsible for any applicable taxes, import duties, or other governmental charges in their jurisdiction.</p>
+          </div>
+        </section>
+
+        <section className="bg-charcoal border border-gold/20 p-8">
+          <h2 className="font-display text-2xl text-gold mb-4">5. Delivery & Risk Transfer</h2>
+          <p className="text-gray-300 leading-relaxed">
+            All deliveries are fully insured during transit. Risk of loss transfers to the client upon 
+            delivery and signature confirmation. Delivery timelines are estimates and may vary based on 
+            destination, customs processing, and other factors beyond our control. Special delivery 
+            arrangements may be made for high-value acquisitions.
+          </p>
+        </section>
+
+        <section className="bg-charcoal border border-gold/20 p-8">
+          <h2 className="font-display text-2xl text-gold mb-4">6. Product Authenticity</h2>
+          <p className="text-gray-300 leading-relaxed">
+            All gold products supplied by Rock International Bullion are sourced exclusively from 
+            LBMA-accredited refineries and come with original assay certificates. We guarantee the 
+            authenticity, weight, and purity of all products as specified. Any concerns regarding 
+            authenticity must be reported within 7 days of delivery.
+          </p>
+        </section>
+
+        <section className="bg-charcoal border border-gold/20 p-8">
+          <h2 className="font-display text-2xl text-gold mb-4">7. Limitation of Liability</h2>
+          <p className="text-gray-300 leading-relaxed">
+            To the maximum extent permitted by law, Rock International Bullion shall not be liable for 
+            any indirect, incidental, special, consequential, or punitive damages, including loss of 
+            profits, arising from your use of our services. Our total liability shall not exceed the 
+            value of the specific transaction giving rise to the claim.
+          </p>
+        </section>
+
+        <section className="bg-charcoal border border-gold/20 p-8">
+          <h2 className="font-display text-2xl text-gold mb-4">8. Confidentiality</h2>
+          <p className="text-gray-300 leading-relaxed">
+            We maintain strict confidentiality regarding all client transactions and information. 
+            Both parties agree not to disclose the terms of any transaction to third parties except 
+            as required by law or with prior written consent. This obligation survives the termination 
+            of any business relationship.
+          </p>
+        </section>
+
+        <section className="bg-charcoal border border-gold/20 p-8">
+          <h2 className="font-display text-2xl text-gold mb-4">9. Governing Law & Disputes</h2>
+          <p className="text-gray-300 leading-relaxed">
+            These Terms shall be governed by and construed in accordance with the laws of the State of 
+            New York, United States. Any disputes arising from these terms or our services shall be 
+            resolved through confidential arbitration in New York City, unless otherwise agreed in writing.
+          </p>
+        </section>
+
+        <section className="bg-charcoal border border-gold/20 p-8">
+          <h2 className="font-display text-2xl text-gold mb-4">10. Modifications</h2>
+          <p className="text-gray-300 leading-relaxed">
+            We reserve the right to modify these Terms of Service at any time. Material changes will be 
+            communicated to active clients. Continued use of our services after such modifications 
+            constitutes acceptance of the updated terms.
+          </p>
+        </section>
+
+        <section className="bg-charcoal border border-gold/20 p-8">
+          <h2 className="font-display text-2xl text-gold mb-4">11. Contact Information</h2>
+          <p className="text-gray-300 leading-relaxed">
+            For questions regarding these Terms of Service, please contact us at{' '}
+            <a href="mailto:legal@rockinternationalbullion.com" className="text-gold hover:underline">
+              legal@rockinternationalbullion.com
+            </a>
+          </p>
+        </section>
+      </div>
+    </div>
+  </div>
+);
+
+// AML Policy Page
+const AMLPolicyPage = () => (
+  <div data-testid="aml-policy-page" className="pt-24 pb-16 min-h-screen">
+    <div className="max-w-4xl mx-auto px-6">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="mb-12"
+      >
+        <h1 className="font-display text-4xl md:text-5xl text-white mb-4">Anti-Money Laundering Policy</h1>
+        <p className="text-gray-400">Last Updated: December 2025</p>
+        <div className="w-20 h-1 bg-gold mt-4"></div>
+      </motion.div>
+
+      <div className="prose prose-invert max-w-none space-y-8">
+        <section className="bg-charcoal border border-gold/20 p-8">
+          <h2 className="font-display text-2xl text-gold mb-4">1. Policy Statement</h2>
+          <p className="text-gray-300 leading-relaxed">
+            Rock International Bullion is committed to the highest standards of Anti-Money Laundering (AML) 
+            and Counter-Terrorist Financing (CTF) compliance. We maintain a robust compliance program 
+            designed to prevent our services from being used to facilitate money laundering, terrorist 
+            financing, or other financial crimes. This policy applies to all employees, officers, and 
+            business partners.
+          </p>
+        </section>
+
+        <section className="bg-charcoal border border-gold/20 p-8">
+          <h2 className="font-display text-2xl text-gold mb-4">2. Regulatory Framework</h2>
+          <p className="text-gray-300 leading-relaxed mb-4">
+            Our AML program is designed to comply with applicable laws and regulations, including:
+          </p>
+          <ul className="text-gray-300 leading-relaxed space-y-2 list-disc list-inside">
+            <li>The Bank Secrecy Act (BSA) and its implementing regulations</li>
+            <li>USA PATRIOT Act provisions</li>
+            <li>Financial Crimes Enforcement Network (FinCEN) requirements</li>
+            <li>Office of Foreign Assets Control (OFAC) sanctions programs</li>
+            <li>UK Money Laundering Regulations</li>
+            <li>Financial Action Task Force (FATF) recommendations</li>
+          </ul>
+        </section>
+
+        <section className="bg-charcoal border border-gold/20 p-8">
+          <h2 className="font-display text-2xl text-gold mb-4">3. Customer Due Diligence (CDD)</h2>
+          <div className="text-gray-300 leading-relaxed space-y-4">
+            <p>We conduct thorough due diligence on all clients, which includes:</p>
+            <p><strong className="text-white">Identity Verification:</strong> Collection and verification of government-issued identification, proof of address, and other relevant documentation.</p>
+            <p><strong className="text-white">Beneficial Ownership:</strong> Identification of ultimate beneficial owners for corporate clients and trusts.</p>
+            <p><strong className="text-white">Source of Funds:</strong> Verification that funds used for transactions are derived from legitimate sources.</p>
+            <p><strong className="text-white">Risk Assessment:</strong> Evaluation of client risk profile based on various factors including geography, transaction patterns, and business purpose.</p>
+          </div>
+        </section>
+
+        <section className="bg-charcoal border border-gold/20 p-8">
+          <h2 className="font-display text-2xl text-gold mb-4">4. Enhanced Due Diligence (EDD)</h2>
+          <p className="text-gray-300 leading-relaxed mb-4">
+            Enhanced due diligence measures are applied to higher-risk clients, including:
+          </p>
+          <ul className="text-gray-300 leading-relaxed space-y-2 list-disc list-inside">
+            <li>Politically Exposed Persons (PEPs) and their family members</li>
+            <li>Clients from high-risk jurisdictions</li>
+            <li>Complex ownership structures</li>
+            <li>Unusually large or frequent transactions</li>
+            <li>Clients with adverse media coverage</li>
+          </ul>
+        </section>
+
+        <section className="bg-charcoal border border-gold/20 p-8">
+          <h2 className="font-display text-2xl text-gold mb-4">5. Transaction Monitoring</h2>
+          <p className="text-gray-300 leading-relaxed">
+            We maintain ongoing monitoring systems to detect suspicious activities, including:
+            unusual transaction patterns, transactions inconsistent with client profile, attempts to 
+            structure transactions to avoid reporting thresholds, and transactions involving high-risk 
+            jurisdictions. All suspicious activities are promptly investigated and reported as required.
+          </p>
+        </section>
+
+        <section className="bg-charcoal border border-gold/20 p-8">
+          <h2 className="font-display text-2xl text-gold mb-4">6. Sanctions Screening</h2>
+          <p className="text-gray-300 leading-relaxed">
+            All clients and transactions are screened against relevant sanctions lists, including:
+            OFAC Specially Designated Nationals (SDN) List, UN Security Council Sanctions Lists, 
+            EU Consolidated Sanctions List, and UK HM Treasury Sanctions List. We do not engage in 
+            any transactions with sanctioned individuals, entities, or jurisdictions.
+          </p>
+        </section>
+
+        <section className="bg-charcoal border border-gold/20 p-8">
+          <h2 className="font-display text-2xl text-gold mb-4">7. Record Keeping</h2>
+          <p className="text-gray-300 leading-relaxed">
+            We maintain comprehensive records of all client identification documents, transaction records, 
+            and due diligence documentation for a minimum of five years after the end of the business 
+            relationship or completion of the transaction, or longer as required by applicable law.
+          </p>
+        </section>
+
+        <section className="bg-charcoal border border-gold/20 p-8">
+          <h2 className="font-display text-2xl text-gold mb-4">8. Reporting Obligations</h2>
+          <p className="text-gray-300 leading-relaxed">
+            We comply with all applicable reporting requirements, including the filing of Suspicious 
+            Activity Reports (SARs) and Currency Transaction Reports (CTRs) as required. Our compliance 
+            team is trained to identify and escalate potentially suspicious activities for review and 
+            potential reporting.
+          </p>
+        </section>
+
+        <section className="bg-charcoal border border-gold/20 p-8">
+          <h2 className="font-display text-2xl text-gold mb-4">9. Employee Training</h2>
+          <p className="text-gray-300 leading-relaxed">
+            All employees receive comprehensive AML training upon hire and ongoing training thereafter. 
+            Training covers recognition of suspicious activities, reporting procedures, regulatory 
+            requirements, and the consequences of non-compliance. Training records are maintained 
+            as part of our compliance documentation.
+          </p>
+        </section>
+
+        <section className="bg-charcoal border border-gold/20 p-8">
+          <h2 className="font-display text-2xl text-gold mb-4">10. Compliance Officer</h2>
+          <p className="text-gray-300 leading-relaxed">
+            Our designated AML Compliance Officer is responsible for overseeing the implementation of 
+            this policy, ensuring regulatory compliance, coordinating with law enforcement when necessary, 
+            and reporting to senior management and the board on AML matters.
+          </p>
+        </section>
+
+        <section className="bg-charcoal border border-gold/20 p-8">
+          <h2 className="font-display text-2xl text-gold mb-4">11. Client Cooperation</h2>
+          <p className="text-gray-300 leading-relaxed">
+            By engaging our services, clients agree to provide accurate information, respond promptly 
+            to requests for additional documentation, and notify us of any material changes to their 
+            information. Failure to cooperate with AML requirements may result in termination of the 
+            business relationship.
+          </p>
+        </section>
+
+        <section className="bg-charcoal border border-gold/20 p-8">
+          <h2 className="font-display text-2xl text-gold mb-4">12. Contact Information</h2>
+          <p className="text-gray-300 leading-relaxed">
+            For questions regarding our AML Policy or to report suspicious activities, please contact 
+            our Compliance Department at{' '}
+            <a href="mailto:compliance@rockinternationalbullion.com" className="text-gold hover:underline">
+              compliance@rockinternationalbullion.com
+            </a>
+          </p>
+        </section>
+      </div>
+    </div>
+  </div>
+);
+
 // Main App Component
 function App() {
   return (
