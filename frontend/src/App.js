@@ -373,7 +373,7 @@ const ProductsPage = () => {
             <div className="w-12 h-12 border-4 border-gold border-t-transparent rounded-full animate-spin"></div>
           </div>
         ) : (
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {products.map((product, idx) => (
               <motion.div
                 key={product.id}
@@ -381,32 +381,35 @@ const ProductsPage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: idx * 0.1 }}
                 data-testid={`product-card-${idx}`}
-                className="bg-charcoal border border-gold/20 hover:border-gold transition-all group"
+                className="bg-charcoal border border-gold/20 hover:border-gold transition-all group flex flex-col md:flex-row"
               >
-                <div className="aspect-square bg-jet overflow-hidden">
+                <div className="md:w-2/5 aspect-square md:aspect-auto bg-jet overflow-hidden">
                   <img 
                     src={product.image_url} 
                     alt={product.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <div className="p-6">
-                  <h3 className="font-display text-xl text-white mb-3">{product.name}</h3>
-                  <div className="space-y-2 text-sm mb-4">
-                    <div className="flex justify-between">
-                      <span className="text-gray-500">Weight</span>
-                      <span className="text-gold">{product.weight} {product.weight_unit}</span>
+                <div className="md:w-3/5 p-6 flex flex-col justify-between">
+                  <div>
+                    <h3 className="font-display text-2xl text-white mb-4">{product.name}</h3>
+                    <div className="grid grid-cols-2 gap-3 text-sm mb-5">
+                      <div className="bg-jet/50 p-3 rounded">
+                        <span className="text-gray-500 block text-xs mb-1">Weight</span>
+                        <span className="text-gold font-semibold">{product.weight} {product.weight_unit}</span>
+                      </div>
+                      <div className="bg-jet/50 p-3 rounded">
+                        <span className="text-gray-500 block text-xs mb-1">Purity</span>
+                        <span className="text-gold font-semibold">{product.purity}</span>
+                      </div>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="text-gray-500">Purity</span>
-                      <span className="text-gold">{product.purity}</span>
+                    <div className="mb-4">
+                      <span className="inline-block bg-gold/10 text-gold text-xs px-3 py-1 rounded-full border border-gold/30">
+                        {product.certification}
+                      </span>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="text-gray-500">Certification</span>
-                      <span className="text-white text-xs">{product.certification}</span>
-                    </div>
+                    <p className="text-gray-400 text-sm leading-relaxed mb-5">{product.description}</p>
                   </div>
-                  <p className="text-gray-400 text-sm mb-4 line-clamp-2">{product.description}</p>
                   <Link
                     to="/contact"
                     className="block text-center bg-gold text-jet py-3 font-semibold hover:bg-gold-light transition-all"
