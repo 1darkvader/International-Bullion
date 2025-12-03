@@ -1419,6 +1419,9 @@ function App() {
             <Route path="/clients" element={<ClientsPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+            <Route path="/terms-of-service" element={<TermsOfServicePage />} />
+            <Route path="/aml-policy" element={<AMLPolicyPage />} />
           </Routes>
         </main>
         <Footer />
