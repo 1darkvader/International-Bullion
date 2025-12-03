@@ -549,7 +549,7 @@ const AboutPage = () => (
               world-class security.
             </p>
             <p>
-              His approach is simple: understand the client's objectives, source the finest gold 
+              {"His approach is simple: understand the client's objectives, source the finest gold"} 
               available, and deliver it safely—anywhere in the world.
             </p>
           </div>
