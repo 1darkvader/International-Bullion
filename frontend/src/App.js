@@ -411,7 +411,7 @@ const ProductsPage = () => {
                     to="/contact"
                     className="block text-center bg-gold text-jet py-3 font-semibold hover:bg-gold-light transition-all"
                   >
-                    Request Today's Price
+                    {"Request Today's Price"}
                   </Link>
                 </div>
               </motion.div>
