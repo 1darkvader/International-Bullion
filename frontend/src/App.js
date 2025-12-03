@@ -210,7 +210,7 @@ const HomePage = () => {
                 data-testid="hero-cta-primary"
                 className="bg-gold text-jet px-8 py-4 font-semibold tracking-wide hover:bg-gold-light transition-all flex items-center justify-center gap-2"
               >
-                Request Today's Price <ChevronRight size={20} />
+                {"Request Today's Price"} <ChevronRight size={20} />
               </Link>
               <Link
                 to="/products"
