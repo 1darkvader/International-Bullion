@@ -1039,7 +1039,7 @@ const PrivacyPolicyPage = () => (
         <section className="bg-charcoal border border-gold/20 p-8">
           <h2 className="font-display text-2xl text-gold mb-4">1. Introduction</h2>
           <p className="text-gray-300 leading-relaxed">
-            Rock International Bullion ("we," "our," or "us") is committed to protecting the privacy and 
+            {"Rock International Bullion (\"we,\" \"our,\" or \"us\") is committed to protecting the privacy and"} 
             confidentiality of our clients. This Privacy Policy explains how we collect, use, disclose, 
             and safeguard your information when you engage with our services or visit our website. 
             As a premier private gold dealership, we understand that discretion is paramount to our clients.
