@@ -268,7 +268,7 @@ const HomePage = () => {
             className="text-center mb-16"
           >
             <h2 className="font-display text-3xl md:text-4xl text-white mb-4">Featured Gold Bars</h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">Owning physical gold is not just a purchase—it's a strategy.</p>
+            <p className="text-gray-400 max-w-2xl mx-auto">{"Owning physical gold is not just a purchase—it's a strategy."}</p>
             <div className="w-20 h-1 bg-gold mx-auto mt-4"></div>
           </motion.div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
