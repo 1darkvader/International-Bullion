@@ -512,11 +512,11 @@ const AboutPage = () => (
         className="text-center mb-16"
       >
         <h1 className="font-display text-4xl md:text-5xl text-white mb-4">About Us</h1>
-        <p className="text-gray-400 max-w-2xl mx-auto">Meet the leadership team behind Rock International Bullion</p>
+        <p className="text-gray-400 max-w-2xl mx-auto">Meet the leadership behind Rock International Bullion</p>
         <div className="w-20 h-1 bg-gold mx-auto mt-4"></div>
       </motion.div>
 
-      {/* David Rock Section */}
+      {/* Hannah A. Fry Section */}
       <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
@@ -527,9 +527,9 @@ const AboutPage = () => (
             <div className="bg-gradient-to-br from-gold/20 to-transparent aspect-[4/5] flex items-center justify-center">
               <div className="text-center">
                 <div className="w-32 h-32 mx-auto bg-gold-gradient rounded-full flex items-center justify-center mb-6">
-                  <span className="font-display text-4xl text-jet font-bold">DR</span>
+                  <span className="font-display text-4xl text-jet font-bold">HF</span>
                 </div>
-                <h3 className="font-display text-2xl text-white">David Rock</h3>
+                <h3 className="font-display text-2xl text-white">Hannah A. Fry</h3>
                 <p className="text-gold">Founder & Principal</p>
               </div>
             </div>
@@ -540,45 +540,6 @@ const AboutPage = () => (
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-        >
-          <h2 className="font-display text-3xl text-white mb-6">Meet David Rock</h2>
-          <div className="space-y-4 text-gray-300 leading-relaxed">
-            <p>
-              For over 15 years, David Rock has assisted private clients in quietly building, 
-              holding, and transferring physical gold wealth. Operating from New York and London, 
-              he has established Rock International Bullion as a trusted name among high-net-worth 
-              individuals seeking discretion and expertise.
-            </p>
-            <p>
-              With an extensive network of LBMA-accredited refineries and secure logistics partners, 
-              David ensures that every transaction is handled with precision, confidentiality, and 
-              world-class security.
-            </p>
-            <p>
-              {"His approach is simple: understand the client's objectives, source the finest gold"} 
-              available, and deliver it safely—anywhere in the world.
-            </p>
-          </div>
-          <div className="mt-8 grid grid-cols-2 gap-6">
-            <div className="bg-jet border border-gold/20 p-4 text-center">
-              <div className="font-display text-3xl text-gold">15+</div>
-              <div className="text-gray-400 text-sm">Years Experience</div>
-            </div>
-            <div className="bg-jet border border-gold/20 p-4 text-center">
-              <div className="font-display text-3xl text-gold">2</div>
-              <div className="text-gray-400 text-sm">Global Offices</div>
-            </div>
-          </div>
-        </motion.div>
-      </div>
-
-      {/* Hannah A. Fry Section */}
-      <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
-        <motion.div
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          className="order-2 lg:order-1"
         >
           <h2 className="font-display text-3xl text-white mb-6">Meet Hannah A. Fry</h2>
           <div className="space-y-4 text-gray-300 leading-relaxed">
@@ -594,9 +555,10 @@ const AboutPage = () => (
               {"client's"} unique financial objectives and privacy requirements.
             </p>
             <p>
-              Her commitment to excellence and discretion has made her an invaluable partner for 
-              clients seeking sophisticated gold investment solutions with the highest level of 
-              confidentiality.
+              Operating from New York and London, she has established Rock International Bullion as a 
+              trusted name among high-net-worth individuals seeking discretion and expertise. Her 
+              commitment to excellence has made her an invaluable partner for clients seeking 
+              sophisticated gold investment solutions.
             </p>
           </div>
           <div className="mt-8 grid grid-cols-2 gap-6">
@@ -605,27 +567,8 @@ const AboutPage = () => (
               <div className="text-gray-400 text-sm">Years in Private Wealth</div>
             </div>
             <div className="bg-jet border border-gold/20 p-4 text-center">
-              <div className="font-display text-3xl text-gold">$500M+</div>
-              <div className="text-gray-400 text-sm">Assets Advised</div>
-            </div>
-          </div>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, x: 30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          className="order-1 lg:order-2"
-        >
-          <div className="bg-charcoal border border-gold/30 p-1">
-            <div className="bg-gradient-to-br from-gold/20 to-transparent aspect-[4/5] flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-32 h-32 mx-auto bg-gold-gradient rounded-full flex items-center justify-center mb-6">
-                  <span className="font-display text-4xl text-jet font-bold">HF</span>
-                </div>
-                <h3 className="font-display text-2xl text-white">Hannah A. Fry</h3>
-                <p className="text-gold">Director of Client Relations</p>
-              </div>
+              <div className="font-display text-3xl text-gold">2</div>
+              <div className="text-gray-400 text-sm">Global Offices</div>
             </div>
           </div>
         </motion.div>
