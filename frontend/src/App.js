@@ -14,7 +14,7 @@ const PRODUCTS = [
     purity: '999.9',
     certification: 'LBMA Certified',
     description: 'Perfect entry point for new investors. LBMA-certified 1 gram fine gold bar with assay certificate.',
-    image_url: 'https://images.pexels.com/photos/35065436/pexels-photo-35065436.jpeg?auto=compress&cs=tinysrgb&w=400'
+    image_url: 'https://images.pexels.com/photos/4386158/pexels-photo-4386158.jpeg?auto=compress&cs=tinysrgb&w=400'
   },
   {
     id: '2',
@@ -24,7 +24,7 @@ const PRODUCTS = [
     purity: '999.9',
     certification: 'LBMA Certified',
     description: 'Popular choice for serious investors. Cast or minted 100g bar with full certification.',
-    image_url: 'https://images.unsplash.com/photo-1718752773195-c19c1c329156?w=400&q=80'
+    image_url: 'https://images.pexels.com/photos/4386370/pexels-photo-4386370.jpeg?auto=compress&cs=tinysrgb&w=400'
   },
   {
     id: '3',
@@ -34,7 +34,7 @@ const PRODUCTS = [
     purity: '999.9',
     certification: 'LBMA Certified',
     description: 'Premium investment bar for substantial holdings. Cast 1kg bar from accredited refinery.',
-    image_url: 'https://images.unsplash.com/photo-1718752773283-de1f92513671?w=400&q=80'
+    image_url: 'https://images.pexels.com/photos/4386476/pexels-photo-4386476.jpeg?auto=compress&cs=tinysrgb&w=400'
   },
   {
     id: '4',
@@ -44,7 +44,7 @@ const PRODUCTS = [
     purity: '995.0+',
     certification: 'LBMA Good Delivery',
     description: 'Institutional-grade London Good Delivery bar. The gold standard for central banks and major investors.',
-    image_url: 'https://images.unsplash.com/photo-1610375461246-83df859d849d?w=400&q=80'
+    image_url: 'https://images.pexels.com/photos/4386442/pexels-photo-4386442.jpeg?auto=compress&cs=tinysrgb&w=400'
   }
 ];
 
