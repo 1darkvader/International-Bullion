@@ -198,21 +198,6 @@ const Footer = () => (
 
 // Home Page
 const HomePage = () => {
-  const [products, setProducts] = useState([]);
-  const [spotPrice, setSpotPrice] = useState(null);
-
-  useEffect(() => {
-    fetch(`${API_URL}/api/products`)
-      .then(res => res.json())
-      .then(data => setProducts(data.products || []))
-      .catch(err => console.error('Error fetching products:', err));
-
-    fetch(`${API_URL}/api/spot-price`)
-      .then(res => res.json())
-      .then(data => setSpotPrice(data))
-      .catch(err => console.error('Error fetching spot price:', err));
-  }, []);
-
   const features = [
     { icon: <Lock className="w-8 h-8" />, title: 'Discreet Transactions', desc: 'Complete confidentiality for all purchases and transfers.' },
     { icon: <Shield className="w-8 h-8" />, title: 'LBMA-Certified Gold', desc: 'Only the highest quality gold from accredited refineries.' },
@@ -226,7 +211,7 @@ const HomePage = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-jet via-charcoal to-jet"></div>
         <div className="absolute inset-0 opacity-20">
           <img 
-            src="https://images.unsplash.com/photo-1643324897407-54f8ae049132?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwxfHxnb2xkJTIwYnVsbGlvbiUyMGJsYWNrJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3NjQ3ODU2OTN8MA&ixlib=rb-4.1.0&q=85" 
+            src="https://images.unsplash.com/photo-1643324897407-54f8ae049132?w=1920&q=80" 
             alt="Gold texture" 
             className="w-full h-full object-cover"
           />
@@ -245,20 +230,16 @@ const HomePage = () => {
             <p className="text-gray-300 text-lg md:text-xl mb-8 max-w-2xl mx-auto">
               Private, Secure, Global. Premium gold procurement services for high-net-worth individuals.
             </p>
-            {spotPrice && (
-              <div className="inline-block bg-charcoal/80 border border-gold/30 px-6 py-3 mb-8">
-                <span className="text-gray-400 text-sm">Gold Spot Price: </span>
-                <span className="text-gold font-semibold text-lg">${spotPrice.gold_price_usd.toLocaleString()} USD/oz</span>
-              </div>
-            )}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/contact"
+              <a
+                href={WHATSAPP_NY}
+                target="_blank"
+                rel="noopener noreferrer"
                 data-testid="hero-cta-primary"
                 className="bg-gold text-jet px-8 py-4 font-semibold tracking-wide hover:bg-gold-light transition-all flex items-center justify-center gap-2"
               >
-                {"Request Today's Price"} <ChevronRight size={20} />
-              </Link>
+                {"Contact Us Today"} <ChevronRight size={20} />
+              </a>
               <Link
                 to="/products"
                 data-testid="hero-cta-secondary"
