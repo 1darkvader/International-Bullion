@@ -353,13 +353,15 @@ const HomePage = () => {
               Our team of experts is ready to assist you with your gold acquisition needs. 
               All inquiries are handled with the utmost discretion.
             </p>
-            <Link
-              to="/contact"
+            <a
+              href={WHATSAPP_NY}
+              target="_blank"
+              rel="noopener noreferrer"
               data-testid="cta-consultation"
               className="inline-block bg-gold text-jet px-10 py-4 font-semibold text-lg tracking-wide hover:bg-gold-light transition-all"
             >
               Request Private Consultation
-            </Link>
+            </a>
           </motion.div>
         </div>
       </section>
@@ -369,15 +371,72 @@ const HomePage = () => {
 
 // Products Page
 const ProductsPage = () => {
-  const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(true);
+  return (
+    <div data-testid="products-page" className="pt-24 pb-16 min-h-screen">
+      <div className="max-w-7xl mx-auto px-6">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="text-center mb-16"
+        >
+          <h1 className="font-display text-4xl md:text-5xl text-white mb-4">Our Gold Products</h1>
+          <p className="text-gray-400 max-w-2xl mx-auto">Choose from 1g to 400oz gold bars, sourced only from accredited refineries.</p>
+          <div className="w-20 h-1 bg-gold mx-auto mt-4"></div>
+        </motion.div>
 
-  useEffect(() => {
-    fetch(`${API_URL}/api/products`)
-      .then(res => res.json())
-      .then(data => {
-        setProducts(data.products || []);
-        setLoading(false);
+        <div className="grid md:grid-cols-2 gap-8">
+          {PRODUCTS.map((product, idx) => (
+            <motion.div
+              key={product.id}
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: idx * 0.1 }}
+              data-testid={`product-card-${idx}`}
+              className="bg-charcoal border border-gold/20 hover:border-gold transition-all group flex flex-col md:flex-row"
+            >
+              <div className="md:w-2/5 aspect-square md:aspect-auto bg-jet overflow-hidden">
+                <img 
+                  src={product.image_url} 
+                  alt={product.name}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="md:w-3/5 p-6 flex flex-col justify-between">
+                <div>
+                  <h3 className="font-display text-2xl text-white mb-4">{product.name}</h3>
+                  <div className="grid grid-cols-2 gap-3 text-sm mb-5">
+                    <div className="bg-jet/50 p-3 rounded">
+                      <span className="text-gray-500 block text-xs mb-1">Weight</span>
+                      <span className="text-gold font-semibold">{product.weight} {product.weight_unit}</span>
+                    </div>
+                    <div className="bg-jet/50 p-3 rounded">
+                      <span className="text-gray-500 block text-xs mb-1">Purity</span>
+                      <span className="text-gold font-semibold">{product.purity}</span>
+                    </div>
+                  </div>
+                  <div className="mb-4">
+                    <span className="inline-block bg-gold/10 text-gold text-xs px-3 py-1 rounded-full border border-gold/30">
+                      {product.certification}
+                    </span>
+                  </div>
+                  <p className="text-gray-400 text-sm leading-relaxed mb-5">{product.description}</p>
+                </div>
+                <a
+                  href={WHATSAPP_NY}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-center bg-gold text-jet py-3 font-semibold hover:bg-gold-light transition-all"
+                >
+                  {"Request Today's Price"}
+                </a>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
       })
       .catch(err => {
         console.error('Error:', err);
