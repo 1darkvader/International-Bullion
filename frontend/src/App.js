@@ -24,7 +24,7 @@ const PRODUCTS = [
     purity: '999.9',
     certification: 'LBMA Certified',
     description: 'Popular choice for serious investors. Cast or minted 100g bar with full certification.',
-    image_url: 'https://images.unsplash.com/photo-1624365168968-f283d506c6b6?w=400&q=80'
+    image_url: 'https://images.unsplash.com/photo-1609266377511-e5f9ff75e7d6?w=400&q=80'
   },
   {
     id: '3',
@@ -34,7 +34,7 @@ const PRODUCTS = [
     purity: '999.9',
     certification: 'LBMA Certified',
     description: 'Premium investment bar for substantial holdings. Cast 1kg bar from accredited refinery.',
-    image_url: 'https://images.unsplash.com/photo-1589787168422-ac843ebdb3ba?w=400&q=80'
+    image_url: 'https://images.unsplash.com/photo-1610375461246-83df859d849d?w=400&q=80'
   },
   {
     id: '4',
@@ -44,7 +44,7 @@ const PRODUCTS = [
     purity: '995.0+',
     certification: 'LBMA Good Delivery',
     description: 'Institutional-grade London Good Delivery bar. The gold standard for central banks and major investors.',
-    image_url: 'https://images.unsplash.com/photo-1611598412658-3a14ff7ce4bc?w=400&q=80'
+    image_url: 'https://images.unsplash.com/photo-1607292803062-5b8ff0531b88?w=400&q=80'
   }
 ];
 
