@@ -300,7 +300,7 @@ const HomePage = () => {
             <div className="w-20 h-1 bg-gold mx-auto mt-4"></div>
           </motion.div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {products.slice(0, 4).map((product, idx) => (
+            {PRODUCTS.map((product, idx) => (
               <motion.div
                 key={product.id}
                 initial={{ opacity: 0, y: 30 }}
@@ -320,12 +320,14 @@ const HomePage = () => {
                   <h3 className="font-display text-lg text-white mb-2">{product.name}</h3>
                   <p className="text-gold text-sm mb-1">Purity: {product.purity}</p>
                   <p className="text-gray-500 text-xs">{product.certification}</p>
-                  <Link
-                    to="/contact"
+                  <a
+                    href={WHATSAPP_NY}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="mt-4 block text-center border border-gold text-gold py-2 text-sm hover:bg-gold hover:text-jet transition-all"
                   >
                     Request Price
-                  </Link>
+                  </a>
                 </div>
               </motion.div>
             ))}
