@@ -14,7 +14,7 @@ const PRODUCTS = [
     purity: '999.9',
     certification: 'LBMA Certified',
     description: 'Perfect entry point for new investors. LBMA-certified 1 gram fine gold bar with assay certificate.',
-    image_url: 'https://images.pexels.com/photos/4068314/pexels-photo-4068314.jpeg?auto=compress&cs=tinysrgb&w=400'
+    image_url: 'https://cdn.pixabay.com/photo/2016/11/11/23/34/gold-bars-1817965_640.jpg'
   },
   {
     id: '2',
@@ -24,7 +24,7 @@ const PRODUCTS = [
     purity: '999.9',
     certification: 'LBMA Certified',
     description: 'Popular choice for serious investors. Cast or minted 100g bar with full certification.',
-    image_url: 'https://images.pexels.com/photos/4068318/pexels-photo-4068318.jpeg?auto=compress&cs=tinysrgb&w=400'
+    image_url: 'https://cdn.pixabay.com/photo/2017/10/19/12/22/gold-2867051_640.jpg'
   },
   {
     id: '3',
@@ -34,7 +34,7 @@ const PRODUCTS = [
     purity: '999.9',
     certification: 'LBMA Certified',
     description: 'Premium investment bar for substantial holdings. Cast 1kg bar from accredited refinery.',
-    image_url: 'https://images.pexels.com/photos/4068312/pexels-photo-4068312.jpeg?auto=compress&cs=tinysrgb&w=400'
+    image_url: 'https://cdn.pixabay.com/photo/2014/10/23/10/31/bullion-499380_640.jpg'
   },
   {
     id: '4',
@@ -44,7 +44,7 @@ const PRODUCTS = [
     purity: '995.0+',
     certification: 'LBMA Good Delivery',
     description: 'Institutional-grade London Good Delivery bar. The gold standard for central banks and major investors.',
-    image_url: 'https://images.pexels.com/photos/4068310/pexels-photo-4068310.jpeg?auto=compress&cs=tinysrgb&w=400'
+    image_url: 'https://cdn.pixabay.com/photo/2018/02/02/13/51/gold-3125038_640.jpg'
   }
 ];
 
