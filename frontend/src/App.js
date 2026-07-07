@@ -527,7 +527,7 @@ const AboutPage = () => (
         <div className="w-20 h-1 bg-gold mx-auto mt-4"></div>
       </motion.div>
 
-      {/* Hannah A. Fry Section */}
+      {/* Hannah R. Fry Section */}
       <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
@@ -540,7 +540,7 @@ const AboutPage = () => (
                 <div className="w-32 h-32 mx-auto bg-gold-gradient rounded-full flex items-center justify-center mb-6">
                   <span className="font-display text-4xl text-jet font-bold">HF</span>
                 </div>
-                <h3 className="font-display text-2xl text-white">Hannah A. Fry</h3>
+                <h3 className="font-display text-2xl text-white">Hannah R. Fry</h3>
                 <p className="text-gold">Founder & Principal</p>
               </div>
             </div>
@@ -552,10 +552,10 @@ const AboutPage = () => (
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="font-display text-3xl text-white mb-6">Meet Hannah A. Fry</h2>
+          <h2 className="font-display text-3xl text-white mb-6">Meet Hannah R. Fry</h2>
           <div className="space-y-4 text-gray-300 leading-relaxed">
             <p>
-              Hannah A. Fry brings over a decade of experience in private wealth management and 
+              Hannah R. Fry brings over a decade of experience in private wealth management and 
               precious metals advisory to Rock International Bullion. Her expertise spans institutional 
               investment strategies, portfolio diversification, and discreet asset protection for 
               ultra-high-net-worth families.
